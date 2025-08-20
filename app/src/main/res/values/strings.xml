@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InstagramChino</string>
+    <string name="autor">Miguel Sepulveda</string>
+    <string name="descripcionApp">Inicia una nueva aventura con InstagramChino
+        y descubre una nueva forma de ver el mundo</string>
+    <string name="descripcionLogin">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="btn_comenzar">Comenzar</string>
+    <string name="btn_registrase">Regístrate</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_recuperarContraseña">Recupera tu contraseña</string>
+    <string name="btn_loginGoogle">Ingresa con Google</string>
+    <string name="sincuenta">No tienes cuenta?</string>
+</resources>
