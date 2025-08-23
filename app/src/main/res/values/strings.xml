@@ -10,4 +10,7 @@
     <string name="btn_recuperarContraseña">Recupera tu contraseña</string>
     <string name="btn_loginGoogle">Ingresa con Google</string>
     <string name="sincuenta">No tienes cuenta?</string>
+    <string name="msj_recuperarContraseña">Por Favor, escriba su correo electrónico. Recibirá un enlace para crear la contraseña nueva por correo electrónico.</string>
+    <string name="correo">Correo Electrónico</string>
+    <string name="btn_enviar">Enviar</string>
 </resources>
