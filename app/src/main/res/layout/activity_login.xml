@@ -95,10 +95,10 @@
 
     <Button
         android:id="@+id/btnIngresar"
-        android:layout_width="163dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="496dp"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="484dp"
         android:gravity="center"
         android:text="@string/btn_ingresar"
         android:textSize="20sp"
@@ -114,8 +114,8 @@
         style="@style/Widget.Material3.Button.TextButton.Dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="560dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="556dp"
         android:text="@string/btn_recuperarContraseña"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +124,7 @@
     <Button
         android:id="@+id/btnLoginGoogle"
         android:layout_width="285dp"
-        android:layout_height="78dp"
+        android:layout_height="70dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="648dp"
         android:text="@string/btn_loginGoogle"
@@ -140,26 +140,26 @@
         app:strokeColor="@color/black"
         app:strokeWidth="1dp" />
 
-    <TextView
-        android:id="@+id/txtSinCuenta"
-        android:layout_width="161dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="764dp"
-        android:text="@string/sincuenta"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btnRegistrarse"
         style="@style/Widget.Material3.Button.TextButton.Dialog"
         android:layout_width="123dp"
         android:layout_height="44dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="756dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="728dp"
         android:text="@string/btn_registrase"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSinCuenta"
+        android:layout_width="161dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="740dp"
+        android:text="@string/sincuenta"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

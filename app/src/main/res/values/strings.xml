@@ -9,8 +9,24 @@
     <string name="btn_ingresar">Ingresar</string>
     <string name="btn_recuperarContraseña">Recupera tu contraseña</string>
     <string name="btn_loginGoogle">Ingresa con Google</string>
+    <string name="btn_singUpGoogle">Registrarse con Google</string>
     <string name="sincuenta">No tienes cuenta?</string>
     <string name="msj_recuperarContraseña">Por Favor, escriba su correo electrónico. Recibirá un enlace para crear la contraseña nueva por correo electrónico.</string>
     <string name="correo">Correo Electrónico</string>
     <string name="btn_enviar">Enviar</string>
+    <string name="btn_editar">Editar</string>
+    <string name="pu_nombre">Nombre</string>
+    <string name="pu_apellido">Apellido</string>
+    <string name="pu_correo">Correo Electrónico</string>
+    <string name="pu_numero">Número de Teléfono</string>
+    <string name="pu_contraseña">Contraseña</string>
+    <string name="pu_recontraseña">Repetir Contraseña</string>
+    <string name="pue_nombre">Pepito Pachuco</string>
+    <string name="pue_apellido">Perez Pereira</string>
+    <string name="pue_correo">4p@prueba.com</string>
+    <string name="pue_numero">333 3333 333</string>
+    <string name="btn_registro">Registrarse</string>
+    <string name="msj_registro">Rellena tus datos a continuación o regístrate con tu cuenta de Google.</string>
+    <string name="chb_terminos_condiciones">Aceptar los términos y condiciones</string>
+    <string name="txt_recuperarContraseña">Recuperar contraseña</string>
 </resources>
