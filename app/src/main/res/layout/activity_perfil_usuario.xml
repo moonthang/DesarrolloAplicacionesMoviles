@@ -1,159 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/red"
+    android:fillViewport="true"
     tools:context=".Perfil_usuario">
 
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="116dp"
-        android:src="@drawable/fotoPerfil"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/black"
-        app:strokeWidth="5dp" />
-
-    <TextView
-        android:id="@+id/txtNombre"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="280dp"
-        android:text="@string/pu_nombre"
-        android:textColor="@color/white"
-        android:textSize="21sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
 
-    <EditText
-        android:id="@+id/etxtNombre"
-        android:layout_width="334dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="308dp"
-        android:background="@drawable/edittext_login"
-        android:hint="@string/pue_nombre"
-        android:textColor="@color/black"
-        android:textColorHint="@color/grey"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp">
 
-    <EditText
-        android:id="@+id/etxtApellido"
-        android:layout_width="334dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="396dp"
-        android:background="@drawable/edittext_login"
-        android:hint="@string/pue_apellido"
-        android:textColor="@color/black"
-        android:textColorHint="@color/grey"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/foto_perfil_usuario"
+                app:strokeColor="@color/black"
+                app:strokeWidth="5dp" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/txtApellido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="368dp"
-        android:text="@string/pu_apellido"
-        android:textColor="@color/white"
-        android:textSize="21sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+            android:paddingHorizontal="20dp">
 
-    <EditText
-        android:id="@+id/etxtCorreo"
-        android:layout_width="334dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="484dp"
-        android:background="@drawable/edittext_login"
-        android:hint="@string/pue_correo"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/black"
-        android:textColorHint="@color/grey"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pu_nombre"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:layout_marginBottom="8dp" />
 
-    <TextView
-        android:id="@+id/txtCorreo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="456dp"
-        android:text="@string/pu_correo"
-        android:textColor="@color/white"
-        android:textSize="21sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/etxtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/edittext_login"
+                android:text="@string/pue_nombre"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="24dp" />
 
-    <EditText
-        android:id="@+id/etxtTelefono"
-        android:layout_width="334dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="572dp"
-        android:background="@drawable/edittext_login"
-        android:hint="@string/pue_numero"
-        android:inputType="phone"
-        android:textColor="@color/black"
-        android:textColorHint="@color/grey"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/txtApellido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pu_apellido"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:layout_marginBottom="8dp" />
 
-    <TextView
-        android:id="@+id/txtTelefono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="544dp"
-        android:text="@string/pu_numero"
-        android:textColor="@color/white"
-        android:textSize="21sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/etxtApellido"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/edittext_login"
+                android:text="@string/pue_apellido"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="24dp" />
 
-    <Button
-        android:id="@+id/btnEditar"
-        android:layout_width="163dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="644dp"
-        android:gravity="center"
-        android:text="@string/btn_editar"
-        android:textSize="20sp"
-        android:visibility="visible"
-        app:backgroundTint="@color/skyblue"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp" />
+            <TextView
+                android:id="@+id/txtCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pu_correo"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:layout_marginBottom="8dp" />
 
-    <TextView
-        android:id="@+id/txtRecuperar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="712dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:text="@string/txt_recuperarContraseña"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/etxtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/edittext_login"
+                android:text="@string/pue_correo"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="24dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/txtTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pu_numero"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/etxtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/edittext_login"
+                android:text="@string/pue_numero"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="40dp">
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="163dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/btn_editar"
+                android:textSize="30sp"
+                android:visibility="visible"
+                app:backgroundTint="@color/skyblue"
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/txtRecuperar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_recuperarContraseña"
+                android:textColor="@color/skyblue"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
