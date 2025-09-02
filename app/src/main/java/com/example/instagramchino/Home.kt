@@ -24,5 +24,11 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
+
+        val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarse)
+        btnRegistrarse.setOnClickListener {
+            val intent = Intent(this, Registro::class.java)
+            startActivity(intent)
+        }
     }
 }
